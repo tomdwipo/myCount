@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">myCount</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tambah">Tambah</string>
+    <string name="reset">reset</string>
+    <string name="report">report</string>
+</resources>

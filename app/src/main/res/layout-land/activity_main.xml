@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="150sp"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tambah"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tambah"/>
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tambah"
+            android:id="@+id/reset"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"/>
+        <Button
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/report"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

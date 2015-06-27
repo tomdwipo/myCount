@@ -23,16 +23,18 @@
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tambah"/>
+        android:text="@string/tambah"
+        android:background="@drawable/button_green_stated"/>
     <Button
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/tambah"
         android:id="@+id/reset"
-
+        android:background="@drawable/button_green_stated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/reset"/>
     <Button
+        android:background="@drawable/button_green_stated"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/reset"
         android:layout_width="wrap_content"

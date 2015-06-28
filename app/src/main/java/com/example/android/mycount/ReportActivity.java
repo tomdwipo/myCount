@@ -4,13 +4,26 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class ReportActivity extends AppCompatActivity {
+    private TextView txtCurrentCount, txtLastReset, txtCountReset, txtAllTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_report);
+        txtCurrentCount = (TextView)findViewById(R.id.txtCurrentCount);
+        txtLastReset = (TextView)findViewById(R.id.txtLastReset);
+        txtCountReset = (TextView)findViewById(R.id.txtCountReset);
+        txtAllTime = (TextView)findViewById(R.id.txtAllTime);
+
+        Bundle b = getIntent().getExtras();
+        txtCurrentCount.setText(String.valueOf(b.getInt("current Count")));
+        txtLastReset.setText(String.valueOf(b.getInt("last Reset")));
+        txtCountReset.setText(String.valueOf(b.getInt("count Reset")));
+        txtAllTime.setText(String.valueOf(b.getInt("allTime")));
+
     }
 
     @Override
